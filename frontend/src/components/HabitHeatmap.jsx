@@ -21,7 +21,7 @@ export default function HabitHeatmap({ habits }) {
     for (let i = days - 1; i >= 0; i--) {
       const d = new Date(today);
       d.setDate(d.getDate() - i);
-      const dateStr = d.toISOString().split('T')[0];
+      const dateStr = d.toLocaleDateString('en-CA');
       const count = completionMap[dateStr] || 0;
       const ratio = count / totalHabits;
 
