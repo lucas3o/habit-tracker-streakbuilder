@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Local env files
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+dist-ssr/
